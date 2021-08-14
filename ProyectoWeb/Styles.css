@@ -1,0 +1,37 @@
+#Fondo {
+  background-color: rgb(171, 248, 248);
+}
+#Logo{
+  padding-left: 3cm;
+}
+
+li {
+
+  display: inline;
+  padding-left:1cm;
+  padding-right: 1cm;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  color: blue;
+  
+
+}
+
+#tituloPrincipal {
+  color: rgb(37, 121, 121);
+  border-color: rgb(84, 84, 219);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2cm;
+
+}
+
+#tituloSecundario {
+  color:rgb(38, 89, 184);
+  font-family:cursive;
+  font-size:1cm;
+}
+
+#TextoNegro {
+  color: black;
+  font-style: italic;
+}

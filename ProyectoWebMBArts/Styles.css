@@ -1,0 +1,238 @@
+/*General - aplicable en todo el sitio*/
+* {
+  margin: 0;
+  padding: 0;
+
+}
+.body 
+{
+  background-color: rgb(197, 229, 248);;
+}
+
+.body--lighterColour
+{
+  background-color: rgb(197, 229, 248);
+}
+
+.body__header 
+{
+  background-color: rgb(105, 195, 247);
+}
+
+.home
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+.ContactMe
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.8rem;
+  font-style: oblique;
+  text-align: right;
+  color: black;
+  margin-right: 2rem;
+}
+
+input {
+  width: 3rem;
+  margin: 1rem;
+  color: darkblue;
+  background-color: whitesmoke;
+  border: solid darkblue 1px;
+}
+
+li 
+{
+  display: inline;
+  padding-left:  0.5rem;;
+  padding-right: 0.5rem;  
+}
+
+/*Pie de pagina*/
+.footer
+{
+font-family: 'Times New Roman', Times, serif;
+font-style: oblique;
+text-align: center;
+margin: 1rem 1rem;
+font-size: 0.5rem;
+color: black;
+}
+
+.footer--increasedSize
+{
+  font-size: 0.8rem;
+}
+
+/*Main page*/
+
+.header__logo
+{
+  padding-left: 3cm;
+  display: inline;
+}
+
+/*Página principal - Título*/
+.grid
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas: "logo" "maintitle maintitle";
+}
+.header__logo {
+  grid-area: logo;
+}
+.header__mainTitle 
+{
+  color: whitesmoke;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 5rem;
+  font-display: center;
+  /*padding-left: 10rem;
+  padding-right: 10rem;*/
+  font-weight: 900;
+  /*margin-bottom: 0rem;
+  margin-top: 0rem;*/
+  grid-area: maintitle;
+}
+
+/*Página Principal - Subtitulo*/
+.header__subtitle 
+{
+  color: darkblue;
+  font-style: italic;
+  font-display: center;
+  padding-left: 18rem;
+  padding-right: 5rem;
+  padding-bottom: 2cm;
+  text-decoration-style: wavy;
+}
+
+/*Página principal - Menu navegación*/
+
+.nav__navegation 
+{
+  font-family: 'Lora';
+  font-style: normal;
+  font-size: 0.8rem;
+  color:darkblue;
+}
+
+/*Menu navegación con alineación derecha*/
+.nav__navegation--RightAlign {
+  font-style: oblique;  
+  text-align: right;
+}
+
+
+/*Sección principal*/
+.mainSection
+{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Sección principal - Título*/
+.mainSection__title 
+{
+  color: black;
+  font-size:1rem;
+  font-weight: 700;
+  margin: 1rem 1rem;
+  color: darkblue;
+}
+
+/*Sección principal - Texto introductorio*/
+.mainSection__text 
+{
+font-weight: 400;
+font-size: 0.8rem;
+Color: darkblue;
+margin: 1rem 2rem;
+}
+
+/*Página Acerca de Mi*/
+/*Página Acerca de Mi - Titulo*/
+.header__secondTitle
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: darkblue;
+}
+
+/*Página Acerca de Mi - Texto*/
+.aboutMeSection__text {
+font-family: 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 200;
+font-size: 0.7rem;
+line-height: 1.3rem;
+margin: 2rem 1rem 0rem 20rem;
+color: darkslategrey;
+}
+
+/*Pagina Precios*/
+.prices__section
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.3rem;
+  color: darkblue;
+}
+
+/*Página Contacto*/
+/*Página Contacto - Texto*/
+.body__text
+{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: darkblue
+}
+
+/*Página Contacto - formulario*/
+.contactMe 
+{ 
+  margin: 0.5rem 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.85rem;
+ border: none;
+ color: darkblue;
+}
+
+/*Página Contacto - formulario con ajuste de márgenes*/
+.contactMe--increasedBottomMargins
+{
+  margin-bottom: 1rem;
+  border: none;
+}
+
+/*Página Contacto - formulario con ajuste bordes de datos a completar*/
+.contactMe--fieldBorders
+{
+  width: 20rem;
+  height: 1rem; 
+  border: 1px solid darkblue;
+}
+
+/*Página Contacto - formulario con ajuste bordes de Caja Comentario*/
+.contactMe--boxBorders
+{
+  width: 30rem;
+  height: 7rem;
+  border: 1px solid darkblue;
+}
