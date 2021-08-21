@@ -135,6 +135,7 @@ color: black;
 justify-self: center;
 align-self: center;
 font-family: "PT serif";
+text-decoration: none;
 }
 
 .mainSection__CheckWork a {
@@ -155,11 +156,12 @@ font-family: "PT serif";
 
 .carrusel__title {
 display: flex;
-  font-family: 'PT Serif';
+font-family: 'Permanent Marker';
   padding: 40px;
   align-self: center;
   justify-self:center;
-  font-size: 30px;
+  justify-content: center;
+  font-size: 40px;
   line-height: 10px;
   letter-spacing: 2px;
   color: black;
@@ -188,10 +190,13 @@ text-decoration: underline ;
   height: 500px;
    border: 1px solid black;
 }
+.carrusel:hover {
+  transform: scale(1.04);
+}
 
 .carrusel__Imagen1{
   grid-area: carrusel_Img1;
-  background: url("./Images/Asuka.png");
+  background: url("./Images/Messi.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -199,7 +204,7 @@ text-decoration: underline ;
 
 .carrusel__Imagen2{
   grid-area: carrusel_Img2;
-  background: url("./Images/KibaWolfRain.png");
+  background: url("./Images/Girl.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -230,7 +235,7 @@ text-decoration: underline ;
 }
 .carrusel__Imagen6{
   grid-area: carrusel_Img6;
-  background: url("./Images/Piccoro.png");
+  background: url("./Images/KibaWolfRain.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -322,9 +327,9 @@ grid-area: topLink;
   padding-left: 20px;
   color: rgb(3, 50, 112);
   font-weight: 900;
-  font-family: "PT serif";
+  font-family: 'Permanent Marker';
   font-size: 35px;
-  letter-spacing: 1px;  
+  letter-spacing: 2px;  
 }
 
 .contact__text {
@@ -345,7 +350,7 @@ grid-area: topLink;
 }
 
 .contactMe {
-  font-family: "PT serif";
+  font-family: "Permanent Marker";
   line-height: 30px;
   padding-left: 10px;
   letter-spacing: 1.5px;
@@ -381,28 +386,55 @@ grid-area: topLink;
 .aboutMe__grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(4,1fr);
-  border: 1px solid black;
+  grid-template-rows: 80px auto auto auto;
+  margin-top: 40px;
+
   grid-template-areas: 
-                       "titulo titulo titulo"
-                       "imagen texto texto"
-                       "imagen texto texto"
-                       "imagen texto texto";
+                       "image title title"
+                       "image mainText mainText"
+                       "image text text"
+                       "image text text";
 }
 
 .aboutMe__mainTitle {
-grid-area: titulo;
-border: 1px solid black;
+grid-area: title;
+justify-content: center;
+justify-self: center;
+justify-items: center;
+font-family: "Permanent Marker";
+letter-spacing: 2px;
 }
 
 .aboutMe__text {
-  grid-area: texto;
-border: 1px solid black;
+  grid-area: text;
+  margin: 0px 25px;
+  align-items: center;
+  align-self: center;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+.aboutMe__mainText {
+  grid-area: mainText;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0px 20px;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1.5px;
 }
 
 .aboutMe__image {
-  grid-area: imagen;
+  grid-area: image;
   border: 1px solid black;
+  width: 900px;
+  height: 500px;
+  background: url(./Images/Max02.jpg);
+  background-size: cover;
 }
 
 
@@ -411,7 +443,7 @@ border: 1px solid black;
 
 .portfolio__title {
 display: flex;
-  font-family: 'PT Serif';
+font-family: 'Permanent Marker';
   padding: 40px;
   align-self: center;
   justify-self:center;
@@ -528,102 +560,3 @@ display: flex;
   height: auto;
   max-width: 100%;
 }
-
-
-/*SECCION COMISSIONS*/
-
-.commissions__title {
-  display: flex;
-    font-family: 'PT Serif';
-    padding: 40px;
-    align-self: center;
-    justify-self:center;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    font-size: 30px;
-    line-height: 10px;
-    letter-spacing: 2px;
-    color: black;
-    grid-area: commissions_mainTitle;
-  }
-
-  .commissions__grid {
-    display: grid;
-    grid-template-columns: repeat(2,300px);
-    grid-template-rows: 200px repeat(4,400px);
-    grid-template-areas:
-    "commissions_mainTitle commissions_mainTitle"
-    "commissions_Img1 text_head" 
-    "commissions_Img2 text_halfBody"
-    "commissions_Img3 text_fullBody"
-    "commissions_Img4 text_characterDesign";
-    align-content: center;
-    justify-content: center;
-    justify-items: center;  
-    }
-   
-  .commissions:hover {
-    transform: scale(1.04);
-  }
-
-  .commissions {
-    width: 300px;
-    height: 400px;
-     border: 1px solid black;
-  }
-/*
-  .commissions__head__Image {
-    grid-area: commissions_Img1;
-    background: url("./Images/Head.png");
-    background-size: cover;
-    height: auto;
-    max-width: 100%;
-  }
-  .commissions__head__text {
-    grid-area: text_head;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 30px;
-    text-align: center;
-    align-content: center;
-  }
-*/
-  .commissions__halfBody__Image {
-    grid-area: commissions_Img2;
-    background: url("./Images/MedioCuerpo.png");
-    background-size: cover;
-    height: auto;
-    max-width: 100%;
-  }
-    
-  .commissions__halfBody__text {
-    grid-area: text_halfBody;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 30px;
-    text-align: center;
-    align-content: center;
-  }
-/*
-  .commissions__fullBody__text {
-    grid-area: text_fullBody;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  .commissions__characterDesign__text {
-    grid-area: text_characterDesign;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 30px;
-    text-align: center;
-  }
-  */
