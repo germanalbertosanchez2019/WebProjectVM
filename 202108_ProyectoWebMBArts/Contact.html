@@ -12,6 +12,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -52,27 +58,27 @@
           <div>
             <label for="Nombre">Name</label>
             <br>
-            <input class="contactMe contactMe--fieldBorders" type="text" id="Nombre" value="">
+            <input class="contactMe contactMe--fieldBorders" type="text" id="Nombre" value="" required>
           </div>
           <!--Correo electronico-->
           <div>
             <label for="email">E-Mail</label>
             <br>
-            <input class="contactMe contactMe--fieldBorders" type="email" id="E-mail" name="E-mail">
+            <input class="contactMe contactMe--fieldBorders" type="email" id="E-mail" name="E-mail" required>
             <br>
             <div>
               <!--Espacio para consulta-->
               <div>
                 <label for="Consulta">Message</label>
                 <br>
-                <input class="contactMe contactMe--boxBorders" type="text" name="Consulta">
+                <input class="contactMe contactMe--boxBorders" type="text" name="Consulta" required>
                 <br>
               </div>
               <br>
               <!--Botones-->
               <div class="contactMe">
-                <input class="contactMe__Buttons" type="submit" value="Submit">
-                <input class="contactMe__Buttons" type="reset" value="Clear">
+                <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+                <button class="btn btn-primary" type="reset" value="Reset">Clear</button>
               </div>
             </div>
       </fieldset>

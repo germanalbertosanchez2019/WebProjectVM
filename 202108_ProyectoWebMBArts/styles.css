@@ -560,3 +560,31 @@ font-family: 'Permanent Marker';
   height: auto;
   max-width: 100%;
 }
+
+/*COMMISSIONS*/
+.commissions__mainTitle {
+ font-family: "Permanent Marker";
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  display: flex;
+}
+
+.Commissions__title {
+  font-family: "PT Serif";
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 2px;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.Commissions__text {
+  font-family: "pt Serif";
+  line-height: 20px;
+  letter-spacing: 2px;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
