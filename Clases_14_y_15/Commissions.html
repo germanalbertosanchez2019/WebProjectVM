@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commissions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="topLink">
+    <!--Enlace para regresar a la página principal-->
+    <a class="home" href="Index.html">Home</a>
+    <!--Enlace redes sociales-->
+    <div>|</div>
+    <a href="https://www.facebook.com/maximiliano.barrero.9">Facebook</a>
+    <div>|</div>
+    <a href="https://www.instagram.com/maxbarrero/">Instagram</a>
+    <div>|</div>
+    <a href="https://twitter.com/Maxbarrero1">Twitter</a>
+  </nav>
+
+  <header>
+    <h1 class="col-sm-12 commissions__mainTitle ms-3 d-flex justify-content-center">Commissions Open!</h1>
+  </header>
+  <main class="container ms-">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <img class="img-fluid w-50 p-3" src="./Images/MedioCuerpo.png" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="Commissions__title text-start fs-3 mt-5">Half-Body Illustration</div>
+        <div class="Commissions__text text-start fs-5 mt-3">Includes simple background
+          <br>
+          U$S 20.00
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <img class="img-fluid w-50 p-3" src="./Images/CuerpoCompleto.png" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="Commissions__title text-start fs-3 mt-5">Full-Body Illustration</div>
+        <div class="Commissions__text text-start fs-5 mt-3">Includes simple background
+          <br>
+          U$S 30.00
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <img class="img-fluid w-50 p-3" src="./Images/CharacterDesign.png" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="Commissions__title text-start fs-3 mt-5">Character Design</div>
+        <div class="Commissions__text text-start fs-5 mt-3">Includes simple background
+          <br>
+          U$S 20.00
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <img class="img-fluid w-50 p-3" src="./Images/SailorMoon.png" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="Commissions__title text-start fs-3 mt-5">Chibi Design</div>
+        <div class="Commissions__text text-start fs-5 mt-3">Includes simple background
+          <br>
+          U$S 15.00
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Contact Me!
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Thank you for reaching out!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="contact__form">
+              <form action="">
+                <fieldset class="contactMe">
+                  <legend></legend>
+                  <div class="contactMe">
+                    <!--Nombre Completo-->
+                    <div>
+                      <label for="Nombre">Name</label>
+                      <br>
+                      <input type="text" id="Nombre" value="" required>
+                    </div>
+                    <!--Correo electronico-->
+                    <div>
+                      <label for="email">E-Mail</label>
+                      <br>
+                      <input type="email" id="E-mail" name="E-mail" required>
+                      <br>
+                      <div>
+                        <!--Espacio para consulta-->
+                        <div>
+                          <label for="Consulta">Message</label>
+                          <br>
+                          <input type="text" name="Consulta" required>
+                          <br>
+                        </div>
+                        <br>
+                </fieldset>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" data-bs-target="modal">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>
