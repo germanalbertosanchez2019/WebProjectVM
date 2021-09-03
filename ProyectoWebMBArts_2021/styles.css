@@ -24,8 +24,8 @@ body {
 .logo
 {
   grid-area: logo;
-  height: 170px;
-  width: 170px;
+  height: auto;
+  max-width: 270px;
   padding-left: 100px;
 }
 .tituloPrincipal{
