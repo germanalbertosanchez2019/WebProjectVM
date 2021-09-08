@@ -13,7 +13,7 @@
   <meta name="keywords"
     content="Illustrations Ilustraciones Illustrator Ilustrador Maximiliano Barrero Draws Dibujos Services Servicios Digital Art Arte digital Commissions Comisiones Sales ventas Comic Comics Fanart">
   <!--Estilos-->
-  <link rel="stylesheet" href="../Styles.css">
+  <link rel="stylesheet" href="../css/style.css">
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -28,95 +28,89 @@
 </head>
 
 <body>
-  <div class="contact__grid">
-    <div class="topLink">
-      <!--Enlace para regresar a la página principal-->
-      <a class="home" href="../Index.html">Home</a>
-      <!--Enlace redes sociales-->
-      <li>|</li>
-      <li>
-        <a href="https://www.facebook.com/maximiliano.barrero.9">Facebook</a>
-      </li>
-      <li>|</li>
-      <li>
-        <a href="https://www.instagram.com/maxbarrero/">Instagram</a>
-      </li>
-      <li>|</li>
-      <li>
-        <a href="https://twitter.com/Maxbarrero1">Twitter</a>
-      </li>
-    </div>
-  </div>
-  </div>
-  <div class="contact__mainTitle">Contact Me!</div>
-  <br>
-  <div class="contact__text">Hi there! Do you have some new amazing project that requires some awesome art? Just want to
-    say hi?
-    <br>
-    Let's chat! Fill in the form below to reach me!
-  </div>
-  <br>
-  <div class="contact__form">
-    <form action="">
-      <fieldset class="contactMe">
-        <legend></legend>
-        <div class="contactMe">
-          <!--Nombre Completo-->
-          <div>
-            <label for="Nombre">Name</label>
-            <br>
-            <input class="contactMe contactMe--fieldBorders" type="text" id="Nombre" value="" required>
-          </div>
-          <!--Correo electronico-->
-          <div>
-            <label for="email">E-Mail</label>
-            <br>
-            <input class="contactMe contactMe--fieldBorders" type="email" id="E-mail" name="E-mail" required>
-            <br>
-            <div>
-              <!--Espacio para consulta-->
-              <div>
-                <label for="Consulta">Message</label>
-                <br>
-                <input class="contactMe contactMe--boxBorders" type="text" name="Consulta" required>
-                <br>
-              </div>
-              <br>
-              <!--Botones-->
-              <div class="contactMe">
-                <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
-                <button class="btn btn-primary" type="reset" value="Reset">Clear</button>
-              </div>
-            </div>
-      </fieldset>
-    </form>
-  </div>
+  <header class="header">
+    <nav class="nav__links">
+      <a class="nav__link" href="../index.html">Home</a>
+      <div>|</div>
+      <a href="https://www.facebook.com/maximiliano.barrero.9">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/maxbarrero/"><i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://twitter.com/Maxbarrero1"><i class="bi bi-twitter"></i>
+      </a>
+    </nav>
 
-  <!--Sección Pie de pagina-->
-  <footer class="footer footer__grid">
-    <div class='redes'>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/maximiliano.barrero.9">Facebook</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/maxbarrero/">Instagram</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/Maxbarrero1">Twitter</a>
-        </li>
-      </ul>
+    <div>
+      <div> <img class="header__logo" src="./../Logo.png" alt="Logo MBArts" />
+      </div>
+      <div class="header__text">
+        <h1 class="header__text__mainTitle">MB Arts</h1>
+        <h5 class="header__text__subtitle">Illustrations</h5>
+      </div>
     </div>
-    <br>
-    <div class="footer__text">
-      <p>
-        <em>Buenos Aires, Argentina - 2021</em>
+  </header>
+
+  <div>
+    <h3 class="contact__mainTitle">Contact Me!</h3>
+    <div class="contact">
+      <p class="contact__text">Hi there! Do you have some new amazing project that requires some awesome art?
+        <br>
+        Just want to say hi? Let's chat! Fill in the form below to reach me!
       </p>
+      <div class="contact__form">
+        <form action="">
+          <fieldset class="contactMe">
+            <legend></legend>
+            <div class="contactMe">
+              <!--Nombre Completo-->
+              <div>
+                <label for="Nombre">Name</label>
+                <br>
+                <input class="contactMe contactMe--fieldBorders" type="text" id="Nombre" value="" required>
+              </div>
+              <!--Correo electronico-->
+              <div>
+                <label for="email">E-Mail</label>
+                <br>
+                <input class="contactMe contactMe--fieldBorders" type="email" id="E-mail" name="E-mail" required>
+                <br>
+                <div>
+                  <!--Espacio para consulta-->
+                  <div>
+                    <label for="Consulta">Message</label>
+                    <br>
+                    <input class="contactMe contactMe--boxBorders" type="text" name="Consulta" required>
+                    <br>
+                  </div>
+                  <br>
+                  <!--Botones-->
+                  <div class="contactMe">
+                    <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+                    <button class="btn btn-primary" type="reset" value="Reset">Clear</button>
+                  </div>
+                </div>
+          </fieldset>
+        </form>
+      </div>
     </div>
-  </footer>
-
   </div>
-
 </body>
+
+<!--Sección Pie de pagina-->
+<footer class="footer">
+  <div class='footer__redes'>
+    <a href="https://www.facebook.com/maximiliano.barrero.9">Facebook</a>
+    <a href="https://www.instagram.com/maxbarrero/">Instagram</a>
+    <a href="https://twitter.com/Maxbarrero1">Twitter</a>
+  </div>
+  <br>
+  <br>
+  <div class="footer__text">
+    <p>
+      <em>Buenos Aires, Argentina - 2021</em>
+    </p>
+  </div>
+</footer>
 
 </html>

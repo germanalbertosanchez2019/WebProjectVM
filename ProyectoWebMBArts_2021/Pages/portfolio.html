@@ -13,7 +13,7 @@
     content="Illustrations Ilustraciones Illustrator Ilustrador Maximiliano Barrero Draws Dibujos Services Servicios Digital Art Arte digital Commissions Comisiones Sales ventas Comic Comics Fanart">
 
   <!--Estilos-->
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../css/style.css">
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -28,73 +28,59 @@
 
 <body>
   <header>
-    <div class="topLink">
-      <!--Enlace para regresar a la página principal-->
-      <a class="home" href="../Index.html">Home</a>
-      <!--Enlace redes sociales-->
-      <li>|</li>
-      <li>
-        <a href="https://www.facebook.com/maximiliano.barrero.9">Facebook</a>
-      </li>
-      <li>|</li>
-      <li>
-        <a href="https://www.instagram.com/maxbarrero/">Instagram</a>
-      </li>
-      <li>|</li>
-      <li>
-        <a href="https://twitter.com/Maxbarrero1">Twitter</a>
-      </li>
-    </div>
+    <nav class="nav__links">
+      <a class="nav__link" href="../index.html">Home</a>
+      <div>|</div>
+      <a href="https://www.facebook.com/maximiliano.barrero.9">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/maxbarrero/"><i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://twitter.com/Maxbarrero1"><i class="bi bi-twitter"></i>
+      </a>
+    </nav>
   </header>
   <!--Sección Portfolio-->
   <section id="Portfolio">
     <h5 class="portfolio__title">BROWSE MY WORK!</h5>
     <br>
     <div class="portfolio__grid portfolio__container">
-      <div class='portfolio portfolio__Imagen1'>
+      <div class='portfolio portfolio__grid__imagen1'>
       </div>
-      <div class='portfolio portfolio__Imagen2'>
+      <div class='portfolio portfolio__grid__imagen2'>
       </div>
-      <div class='portfolio portfolio__Imagen3'>
+      <div class='portfolio portfolio__grid__imagen3'>
       </div>
-      <div class='portfolio portfolio__Imagen4'>
+      <div class='portfolio portfolio__grid__imagen4'>
       </div>
-      <div class='portfolio portfolio__Imagen5'>
+      <div class='portfolio portfolio__grid__imagen5'>
       </div>
-      <div class='portfolio portfolio__Imagen6'>
+      <div class='portfolio portfolio__grid__imagen6'>
       </div>
-      <div class='portfolio portfolio__Imagen7'>
+      <div class='portfolio portfolio__grid__imagen7'>
       </div>
-      <div class='portfolio portfolio__Imagen8'>
+      <div class='portfolio portfolio__grid__imagen8'>
       </div>
-      <div class='portfolio portfolio__Imagen9'>
+      <div class='portfolio portfolio__grid__imagen9'>
       </div>
     </div>
   </section>
-
-  <!--Sección Pie de pagina-->
-  <footer class="footer footer__grid">
-    <div class='redes'>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/maximiliano.barrero.9">Facebook</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/maxbarrero/">Instagram</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/Maxbarrero1">Twitter</a>
-        </li>
-      </ul>
-    </div>
-    <br>
-    <div class="footer__text">
-      <p>
-        <em>Buenos Aires, Argentina - 2021</em>
-      </p>
-    </div>
-  </footer>
-
 </body>
+
+<!--Sección Pie de pagina-->
+<footer class="footer">
+  <div class='footer__redes'>
+    <a href="https://www.facebook.com/maximiliano.barrero.9">Facebook</a>
+    <a href="https://www.instagram.com/maxbarrero/">Instagram</a>
+    <a href="https://twitter.com/Maxbarrero1">Twitter</a>
+  </div>
+  <br>
+  <br>
+  <div class="footer__text">
+    <p>
+      <em>Buenos Aires, Argentina - 2021</em>
+    </p>
+  </div>
+</footer>
 
 </html>

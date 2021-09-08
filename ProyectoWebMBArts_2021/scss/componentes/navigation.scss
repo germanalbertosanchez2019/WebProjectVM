@@ -1,0 +1,46 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  &__logo {
+    max-width: 3rem;
+    height: auto;
+  }
+  .header__text {
+    display: flex;
+    flex-direction: column;
+
+    &__mainTitle {
+      font-family: 'Permanent Marker';
+      font-size: 3rem;
+    }
+    &__subtitle {
+      font-family: 'Bad Script';
+      font-size: 1rem;
+    }
+  }
+}
+.nav {
+  text-decoration: none;
+  line-height: 3rem;
+
+  &__links {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  justify-content: flex-start;
+  font-size: 1rem;
+  gap: 1rem;
+  }
+  &__link a {
+    transition: all 0.3s;
+  }
+  a:hover {
+    color: #0298ac;
+    text-decoration: underline;
+  }
+}
+
+  

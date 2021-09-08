@@ -1,0 +1,67 @@
+.contact {
+  &__mainTitle {
+    display: flex;
+  color: $ColorTitulo;
+  font-weight:lighter;
+  font-family: 'Permanent Marker';
+  font-size: 4rem;
+  letter-spacing: 0.1rem;  
+  justify-content: center;
+  padding-bottom: 4rem;
+    
+  }
+
+  & {
+    display: flex;
+    flex-direction: row;
+    
+    &__text {
+    grid-area: contactText;
+    justify-self: center;
+    align-self: center;
+    font-family: "PT serif";
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    }
+
+    &__form {
+    border: 1px solid $ColorTitulo;
+    width: 700px;
+    margin-left: 40px;
+    grid-area: contactForm;
+    }
+  }
+  
+}
+
+.contactMe {
+  font-family: "Permanent Marker";
+  line-height: 30px;
+  padding-left: 10px;
+  letter-spacing: 1.5px;
+
+  &--fieldBorders {
+  width: 500px;
+  height: 30px; 
+  border: 1px solid $ColorTitulo;
+  }
+
+  &--boxBorders {
+    width: 500px;
+    height: 200px;
+    border: 1px solid $ColorTitulo;
+    display: flex;
+  }
+
+  &__Buttons {
+    margin-bottom: 20px;
+    background-color: $ColorTitulo;
+    border: none;
+    color: white;
+    font-family: "PT serif";
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+  }
+}

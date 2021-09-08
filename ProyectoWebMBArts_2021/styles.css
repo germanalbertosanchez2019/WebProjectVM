@@ -297,15 +297,15 @@ text-decoration: underline ;
 .contact__grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 40px repeat(4,1fr);
-  grid-template-areas: "topLink topLink topLink"
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas: 
                        "contactTitle contactTitle contactTitle"
                        "contactText contactText contactText"
                        "contactForm contactForm contactForm"
                        "footer footer footer";
 }
 
-.topLink {
+/*.topLink {
 display: flex;
 padding-left: 20px;
 justify-content: flex-start;
@@ -320,7 +320,7 @@ grid-area: topLink;
 .topLink a:hover {
   color: #0298ac;
   text-decoration: underline;
-}
+}*/
 
 .contact__mainTitle {
   grid-area: contactTitle;
@@ -382,65 +382,9 @@ grid-area: topLink;
 }
 
 
-/*ABOUT ME SECTION*/
-.aboutMe__grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 80px auto auto auto;
-  margin-top: 40px;
-
-  grid-template-areas: 
-                       "image title title"
-                       "image mainText mainText"
-                       "image text text"
-                       "image text text";
-}
-
-.aboutMe__mainTitle {
-grid-area: title;
-justify-content: center;
-justify-self: center;
-justify-items: center;
-font-family: "Permanent Marker";
-letter-spacing: 2px;
-}
-
-.aboutMe__text {
-  grid-area: text;
-  margin: 0px 25px;
-  align-items: center;
-  align-self: center;
-  text-align: justify;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 1.5px;
-}
-
-.aboutMe__mainText {
-  grid-area: mainText;
-  font-weight: bold;
-  font-size: 25px;
-  margin: 0px 20px;
-  align-items: center;
-  align-self: center;
-  text-align: center;
-  line-height: 30px;
-  letter-spacing: 1.5px;
-}
-
-.aboutMe__image {
-  grid-area: image;
-  border: 1px solid black;
-  width: 900px;
-  height: 500px;
-  background: url(./Images/Max02.jpg);
-  background-size: cover;
-}
-
-
 
 /*SECCION PORTFOLIO*/
-
+/*
 .portfolio__title {
 display: flex;
 font-family: 'Permanent Marker';
@@ -561,7 +505,7 @@ font-family: 'Permanent Marker';
   max-width: 100%;
 }
 
-/*COMMISSIONS*/
+/*COMMISSIONS
 .commissions__mainTitle {
  font-family: "Permanent Marker";
   font-size: 30px;
@@ -588,3 +532,4 @@ font-family: 'Permanent Marker';
   align-content: center;
   align-items: center;
 }
+*/
