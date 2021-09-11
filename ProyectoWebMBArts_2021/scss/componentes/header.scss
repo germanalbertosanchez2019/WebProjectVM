@@ -14,6 +14,11 @@
     font-size: 1rem;
     padding-right: 4rem;
     align-self: center;
+    & a:hover {
+      color: whitesmoke;
+      text-decoration: underline;
+      font-weight:500;
+    }
 
     &__link {
       background-color: $ColorSecundario;
@@ -22,20 +27,11 @@
       gap: 6rem;
       text-decoration: none;
       padding-right: 2rem;
-      & a {
-        transition: all 0.3s;
-        }
-      /*& a:hover {
-          color: red;
-          text-decoration: underline;
-        }*/
       &--net {
         background-color: $ColorSecundario;
         color: $ColorFondo;
         font-size: 1.2rem;
-        }
-          
+        }       
     }
   }
 }
-   

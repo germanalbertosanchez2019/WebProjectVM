@@ -22,6 +22,7 @@ display: flex;
 flex-direction: row;
 
   &__image {
+margin-top: 5rem;
 padding-left: 30px;
   }
 
@@ -34,6 +35,17 @@ padding-left: 30px;
   }
 
   &__title {
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    font-family: "Permanent Marker";
+    letter-spacing: 4px;
+    font-size: 4 * $Root-size;     //Operacion con variable Rootsize
+    margin: 5rem;
+    color: $ColorSecundario //Uso de variable Color
+
+  }
+  &__subtitle {
     font-size: 2 * $Root-size; //Operacion con variable Rootsize
     line-height: 50px;
     letter-spacing: 3px;

@@ -23,19 +23,17 @@ body {
     font-size: 1rem;
     padding-right: 4rem;
     align-self: center; }
+    .header__nav__links a:hover {
+      color: whitesmoke;
+      text-decoration: underline;
+      font-weight: 500; }
     .header__nav__links__link {
       background-color: #09515a;
       color: #e3fcff;
       font-size: 1.3rem;
       gap: 6rem;
       text-decoration: none;
-      padding-right: 2rem;
-      /*& a:hover {
-          color: red;
-          text-decoration: underline;
-        }*/ }
-      .header__nav__links__link a {
-        transition: all 0.3s; }
+      padding-right: 2rem; }
       .header__nav__links__link--net {
         background-color: #09515a;
         color: #e3fcff;
@@ -103,6 +101,7 @@ body {
   display: flex;
   flex-direction: row; }
   .main__image {
+    margin-top: 5rem;
     padding-left: 30px; }
   .main__text {
     justify-self: center;
@@ -110,6 +109,15 @@ body {
     text-align: center;
     margin: 30px; }
   .main__title {
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    font-family: "Permanent Marker";
+    letter-spacing: 4px;
+    font-size: 40px;
+    margin: 5rem;
+    color: #09515a; }
+  .main__subtitle {
     font-size: 20px;
     line-height: 50px;
     letter-spacing: 3px;
