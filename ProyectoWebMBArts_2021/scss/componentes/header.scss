@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  background-color: $ColorSecundario;
+  justify-content: space-between;
+   &__image {
+    height: auto;
+    width: 25rem;
+    padding-left: 4rem;
+    background-color: $ColorSecundario;
+   }
+   &__nav__links {
+    background-color: $ColorSecundario;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding-right: 4rem;
+    align-self: center;
+
+    &__link {
+      background-color: $ColorSecundario;
+      color: $ColorFondo;
+      font-size: 1.3rem;
+      gap: 6rem;
+      text-decoration: none;
+      padding-right: 2rem;
+      & a {
+        transition: all 0.3s;
+        }
+      /*& a:hover {
+          color: red;
+          text-decoration: underline;
+        }*/
+      &--net {
+        background-color: $ColorSecundario;
+        color: $ColorFondo;
+        font-size: 1.2rem;
+        }
+          
+    }
+  }
+}
+   

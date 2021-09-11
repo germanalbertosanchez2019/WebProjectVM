@@ -3,10 +3,43 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  background-color: #b0edf5; }
+  background-color: #e3fcff; }
 
 body {
-  background-color: #b0edf5; }
+  background-color: #e3fcff; }
+
+.header {
+  display: flex;
+  background-color: #09515a;
+  justify-content: space-between; }
+  .header__image {
+    height: auto;
+    width: 25rem;
+    padding-left: 4rem;
+    background-color: #09515a; }
+  .header__nav__links {
+    background-color: #09515a;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding-right: 4rem;
+    align-self: center; }
+    .header__nav__links__link {
+      background-color: #09515a;
+      color: #e3fcff;
+      font-size: 1.3rem;
+      gap: 6rem;
+      text-decoration: none;
+      padding-right: 2rem;
+      /*& a:hover {
+          color: red;
+          text-decoration: underline;
+        }*/ }
+      .header__nav__links__link a {
+        transition: all 0.3s; }
+      .header__nav__links__link--net {
+        background-color: #09515a;
+        color: #e3fcff;
+        font-size: 1.2rem; }
 
 .footer {
   display: flex;
@@ -34,27 +67,12 @@ body {
     justify-self: center;
     margin-bottom: 50px; }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .header__logo {
-    max-width: 3rem;
-    height: auto; }
-  .header .header__text {
-    display: flex;
-    flex-direction: column; }
-    .header .header__text__mainTitle {
-      font-family: 'Permanent Marker';
-      font-size: 3rem; }
-    .header .header__text__subtitle {
-      font-family: 'Bad Script';
-      font-size: 1rem; }
-
 .nav {
+  background-color: #09515a;
   text-decoration: none;
   line-height: 3rem; }
   .nav__links {
+    background-color: #09515a;
     display: flex;
     flex-direction: row;
     padding-left: 1rem;
@@ -64,14 +82,14 @@ body {
   .nav__link a {
     transition: all 0.3s; }
   .nav a:hover {
-    color: #0298ac;
+    color: whitesmoke;
     text-decoration: underline; }
 
-.header {
+.section {
   display: flex;
   flex-direction: column;
   text-align: center; }
-  .header__title {
+  .section__title {
     justify-content: center;
     justify-self: center;
     justify-items: center;
