@@ -19,6 +19,7 @@ body {
   grid-template-areas: "logo tituloPrincipal tituloPrincipal"
                       "logo tituloPrincipal tituloPrincipal"
                       "logo subtitulo subtitulo";
+  background-color: #09515a;
 }
 
 .logo
@@ -35,12 +36,17 @@ body {
   justify-content: center;
   align-content: center;
   justify-items: center;
+  color: #e3fcff;
+  background-color: #09515a;
 }
 .subtitulo {
   font-family: 'Bad Script';
+  font-size: 27px;
   justify-self:self-start;
   padding-left: 120px;
   grid-area: subtitulo;
+  color: #e3fcff;
+  background-color: #09515a;
 }
 
 /*Barra de navegacion*/

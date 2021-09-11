@@ -1,22 +1,5 @@
 //Estilo para page AboutMe
 
-.section {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
-  &__title {
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
-    font-family: "Permanent Marker";
-    letter-spacing: 4px;
-    font-size: 4 * $Root-size;     //Operacion con variable Rootsize
-    margin: 30px;
-    color: $ColorSecundario //Uso de variable Color
-    }
-}
-
 .main {
 display: flex;
 flex-direction: row;
@@ -27,36 +10,32 @@ padding-left: 30px;
   }
 
   &__text {
-    justify-self: center;
-    align-self: center;
     text-align: center;
-    margin: 30px;
-    
+    margin: 2.5rem;    
   }
 
   &__title {
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
     font-family: "Permanent Marker";
-    letter-spacing: 4px;
+    letter-spacing: 0.3rem;
     font-size: 4 * $Root-size;     //Operacion con variable Rootsize
-    margin: 5rem;
-    color: $ColorSecundario //Uso de variable Color
-
+    margin: 4rem;
+    color: $ColorSecundario; //Uso de variable Color
   }
   &__subtitle {
-    font-size: 2 * $Root-size; //Operacion con variable Rootsize
-    line-height: 50px;
-    letter-spacing: 3px;
+    font-size: 2.1 * $Root-size; //Operacion con variable Rootsize
+    font-family: 'Bad Script';
+    font-weight: bold;
+    line-height: 2rem;//50px;
+    letter-spacing: 0.1rem;
     color: $ColorSecundario;  //Uso de variable Color
+    padding-bottom: 1rem;
   }
 
   &__detail {
-    margin-top: 20px;
+    margin-top: 2rem;//20px
     font-size: 1,8 * $Root-size; //Operacion con variable Rootsize
-    line-height: 30px;
-    letter-spacing: 1.5px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
   }
 
 

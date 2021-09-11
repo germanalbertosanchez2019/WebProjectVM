@@ -1,31 +1,25 @@
 .footer {
-  color: $ColorSecundario;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-items: center;
   align-content: center;
   align-items: center;
+  color: $ColorSecundario;
+  margin-bottom: 1rem;
   padding-top: 3rem;
-  
+
   &__redes {
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    color: $ColorSecundario
-    justify-self: center;
-    align-self: center;
-    text-align: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    
+    &__red {
+      color: $ColorSecundario;
+    }
   }
-
-  &__text{
-      font-family: 'Times New Roman', Times, serif;
-      font-style: oblique;
-      text-align: center;
-      font-size: 13px;
-      color: black;
-      align-self: center;
-      justify-self: center;
-      margin-bottom: 50px;
+  &__text{    
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    text-align: center;
+    font-size: 1rem;
   }
 }

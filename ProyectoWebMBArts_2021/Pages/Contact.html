@@ -29,12 +29,13 @@
 
 <body>
   <header class="header">
-    <img class="header__image" src="../LogoMBArts.png" alt="Logo MBArts">
+    <a class="header__nav__links__link" href="../index.html"><img class="header__image" src="../LogoMBArts.png"
+        alt="Logo MBArts"></a>
     <nav class="header__nav__links">
       <a class="header__nav__links__link" href="../index.html">Home</a>
       <a class="header__nav__links__link" href="./aboutMe.html">About me</a>
-      <a class="header__nav__links__link" href="./Commissions.html">Commissions</a>
       <a class="header__nav__links__link" href="./portfolio.html">Portfolio</a>
+      <a class="header__nav__links__link" href="./Commissions.html">Commissions</a>
       <a class="header__nav__links__link" href="./Contact.html">Contact</a>
       <a href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i
           class="bi bi-facebook header__nav__links__link--net"></i></a>
@@ -46,13 +47,16 @@
     </nav>
   </header>
 
-  <div>
-    <h3 class="contact__mainTitle">Contact Me!</h3>
+  <main>
     <div class="contact">
-      <p class="contact__text">Hi there! Do you have some new amazing project that requires some awesome art?
-        <br>
-        Just want to say hi? Let's chat! Fill in the form below to reach me!
-      </p>
+      <div class="contact__text">
+        <p class="contact__text__mainTitle">Contact Me!</p>
+        <p class="contact__text__detail">Hi there! <br> Do you have some new amazing project that requires some awesome
+          art?
+          <br>
+          Just want to say hi? Let's chat! Fill in the form below to reach me!
+        </p>
+      </div>
       <div class="contact__form">
         <form action="">
           <fieldset class="contactMe">
@@ -81,32 +85,33 @@
                   <br>
                   <!--Botones-->
                   <div class="contactMe">
-                    <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
-                    <button class="btn btn-primary" type="reset" value="Reset">Clear</button>
+                    <button class="contactMe__buttons" type="submit" value="Submit">Submit</button>
+                    <button class="contactMe__buttons" type="reset" value="Reset">Clear</button>
                   </div>
                 </div>
           </fieldset>
         </form>
       </div>
     </div>
-  </div>
-</body>
+  </main>
 
-<!--Sección Pie de pagina-->
-<footer class="footer">
-  <div class='footer__redes'>
-    <a href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i class="bi bi-facebook"></i></a>
-    <a href="https://www.instagram.com/maxbarrero/" target="_blank"><i class="bi bi-instagram"></i></a>
-    <a href="https://twitter.com/Maxbarrero1" target="_blank"><i class="bi bi-twitter"></i></a>
-    <a href="mailto:maxobarrero1@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-  </div>
-  <br>
-  <br>
-  <div class="footer__text">
-    <p>
-      <em>Buenos Aires, Argentina - 2021</em>
-    </p>
-  </div>
-</footer>
+  <!--Sección Pie de pagina-->
+  <footer class="footer">
+    <div class='footer__redes'>
+      <a class="footer__redes__red" href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i
+          class="bi bi-facebook"></i></a>
+      <a class="footer__redes__red" href="https://www.instagram.com/maxbarrero/" target="_blank"><i
+          class="bi bi-instagram"></i></a>
+      <a class="footer__redes__red" href="https://twitter.com/Maxbarrero1" target="_blank"><i
+          class="bi bi-twitter"></i></a>
+      <a class="footer__redes__red" href="mailto:maxobarrero1@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+    <div class="footer__text">
+      <p>
+        <em>Buenos Aires, Argentina - 2021</em>
+      </p>
+    </div>
+  </footer>
+</body>
 
 </html>

@@ -1,67 +1,69 @@
 .contact {
-  &__mainTitle {
-    display: flex;
-  color: $ColorTitulo;
-  font-weight:lighter;
-  font-family: 'Permanent Marker';
-  font-size: 4rem;
-  letter-spacing: 0.1rem;  
-  justify-content: center;
-  padding-bottom: 4rem;
-    
-  }
-
-  & {
     display: flex;
     flex-direction: row;
+    padding-top: 5rem;
     
     &__text {
-    grid-area: contactText;
-    justify-self: center;
-    align-self: center;
-    font-family: "PT serif";
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding-left: 20px;
+      flex-direction: column;
+      align-content: center;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+    
+      &__mainTitle {
+      font-family: "Permanent Marker";
+      letter-spacing: 0.3rem;
+      font-size: 4 * $Root-size;     //Operacion con variable Rootsize
+      padding: 3rem;
+      color: $ColorSecundario; //Uso de variable Color
+      }
+
+      &__detail {
+      font-family: "PT serif";
+      font-size: 1.5rem;
+      letter-spacing: 0.13rem;
+      padding-left: 4rem;
+      line-height: 6rem;
+      color: $ColorSecundario;
+      }
     }
 
     &__form {
-    border: 1px solid $ColorTitulo;
-    width: 700px;
-    margin-left: 40px;
-    grid-area: contactForm;
+    border: 0.2rem solid $ColorTitulo;
+    width: 45rem;
+    margin-left: 3rem;
     }
-  }
-  
 }
 
 .contactMe {
   font-family: "Permanent Marker";
-  line-height: 30px;
-  padding-left: 10px;
-  letter-spacing: 1.5px;
+  line-height: 2rem;
+  padding-left: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-size: large;
+  color: $ColorSecundario;
 
   &--fieldBorders {
-  width: 500px;
-  height: 30px; 
-  border: 1px solid $ColorTitulo;
+  width: 38rem;
+  height: 2rem; 
+  border: 0.2rem solid $ColorTitulo;
   }
 
   &--boxBorders {
-    width: 500px;
-    height: 200px;
-    border: 1px solid $ColorTitulo;
+    width: 38rem;
+    height: 15rem;
+    border: 0.2rem solid $ColorTitulo;
     display: flex;
   }
 
-  &__Buttons {
-    margin-bottom: 20px;
-    background-color: $ColorTitulo;
+  &__buttons {
+    margin-bottom: 2rem;
+    background-color: $ColorSecundario;
     border: none;
-    color: white;
-    font-family: "PT serif";
-    font-size: 20px;
-    width: 100px;
-    height: 35px;
+    color: whitesmoke;
+    font-family: 'Permanent Marker';
+    font-size: 1.5rem;
+    width: 8rem;
+    height: 2.5rem;
   }
 }
