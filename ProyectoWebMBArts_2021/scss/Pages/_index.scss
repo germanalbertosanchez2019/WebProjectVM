@@ -1,0 +1,187 @@
+/*Seccion Bienvenidos*/
+.mainSection{
+  &__grid {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 3;
+  justify-content: center;
+  align-items: flex-end;
+  grid-template-areas:"bienvenidos bienvenidos bienvenidos"
+                      "bienvenidos__texto bienvenidos__texto bienvenidos__texto"
+                      "checkMyWork checkMyWork checkMyWork";                  
+  }
+
+  &__welcome {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  grid-area: bienvenidos;
+  padding: 1rem;
+  margin: 3rem;
+  width: 130rem;
+  border-radius: 15px;
+  background-color: #000000;
+  opacity: $Opacity;
+    &__text{
+      color: white;
+      background-color: #000000;
+      text-align: center;
+      font-family:'PT Serif';
+      font-style: oblique;
+      font-size: 3.5rem;
+      opacity: $Opacity;
+    }
+  }
+  
+  &__text {
+    grid-area: bienvenidosTexto;
+    font-family:'PT Serif';
+    color: $ColorFondo;
+    padding: 0.5rem 2rem 0.5rem;//30px 150px 10px;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    background-color: #000000;
+    opacity: $Opacity;
+    text-decoration: none;
+  }
+  
+  &__CheckWork
+  {
+  grid-area: checkMyWork;
+  justify-self: center;
+  align-self: center;
+  background-color: #000000;
+  opacity: $Opacity;
+  
+  & a {
+    transition: all 0.5s;
+  }
+  
+  & a:hover {
+    text-decoration: underline;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+  }
+
+    &__text {
+      font-size: 1.8rem;
+      color: $ColorFondo;
+      font-family: "PT serif";
+      text-decoration: none;
+      background-color: #000000;
+      opacity: $Opacity;
+      color: $ColorFondo;
+      
+    }
+  }
+}
+.background {
+  background-image: url(../Images/Portada_SinOpacidad.png);
+  background-repeat:no-repeat;
+  background-position-y:top;
+  background-position-x: center;
+  background-size: cover;
+  max-width: 100vw;
+  height: 53rem;
+}
+
+
+/*Seccion Carrusel*/
+#carrusel {
+  background-image: linear-gradient(to right, #049fb5, #e3fcff);
+}
+
+.carrusel__title {
+display: flex;
+font-family: 'Permanent Marker';
+background-color: $ColorSecundario;
+color: $ColorFondo;
+  padding: 4rem;
+  align-self: center;
+  justify-self:center;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 10px;
+  letter-spacing: 2px;
+text-decoration: underline ;
+}
+
+.carrusel__grid {
+  display: grid;
+  grid-template-columns: repeat(2,600px);
+  grid-template-rows: repeat(3,700px);
+  grid-template-areas:
+  "carrusel_Img1 carrusel_Img2" 
+  "carrusel_Img3 carrusel_Img4"
+  "carrusel_Img5 carrusel_Img6";
+}
+
+.carrusel__container {
+  justify-content: center;
+  align-content: center;
+  padding: 40px;
+  gap: 20px;
+}
+  
+.carrusel {
+  width: 400px;
+  height: 500px;
+   border: 1px solid black;
+}
+.carrusel:hover {
+  transform: scale(1.04);
+}
+
+.carrusel__Imagen1{
+  grid-area: carrusel_Img1;
+  background: url("../Images/Messi.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carrusel__Imagen2{
+  grid-area: carrusel_Img2;
+  background: url("../Images/Girl.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carrusel__Imagen3{
+  grid-area: carrusel_Img3;
+  background: url("../Images/XMen.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carrusel__Imagen4{
+  grid-area: carrusel_Img4;
+  background: url("../Images/Shiryu.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carrusel__Imagen5{
+  grid-area: carrusel_Img5;
+  background: url("../Images/PowerpuffGirls.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.carrusel__Imagen6{
+  grid-area: carrusel_Img6;
+  background: url("../Images/KibaWolfRain.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+

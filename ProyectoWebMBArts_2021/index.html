@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MB Arts - Home</title>
   <!--Estilos-->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -48,44 +48,41 @@
 
 <body>
   <!--Sección Cabecera-->
-  <header>
-    <div class="header__grid">
-      <img class="logo" src="./Images/Logo.png" alt="Logo MBArts" />
-      <div class="tituloPrincipal">MB Arts</div>
-      <div class="subtitulo">Illustrations</div>
-    </div>
-  </header>
-  <div class="nav__grid">
-    <nav class="barraNavegacion">
-      <div>|</div>
-      <li><a href="./Pages/aboutMe.html">About Me</a></li>
-      <div>|</div>
-      <li><a href="./Pages/portfolio.html">Portfolio</a></li>
-      <div>|</div>
-      <li><a href="./Pages/Commissions.html">Commissions</a></li>
-      <div>|</div>
-      <li><a href="./Pages/Contact.html">Contact</a></li>
-      <div>|</div>
-      <a href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/maxbarrero/" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://twitter.com/Maxbarrero1" target="_blank"><i class="bi bi-twitter"></i></a>
-      <a href="mailto:maxobarrero1@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+  <header class="header">
+    <a class="header__nav__links__link" href="../index.html"><img class="header__image" src="./Images/LogoMBArts.png"
+        alt="Logo MBArts"></a>
+    <nav class="header__nav__links">
+      <a class="header__nav__links__link" href="#">Home</a>
+      <a class="header__nav__links__link" href="./Pages/aboutMe.html">About me</a>
+      <a class="header__nav__links__link" href="./Pages/portfolio.html">Portfolio</a>
+      <a class="header__nav__links__link" href="./Pages/Commissions.html">Commissions</a>
+      <a class="header__nav__links__link" href="./Pages/Contact.html">Contact</a>
+      <a href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i
+          class="bi bi-facebook header__nav__links__link--net"></i></a>
+      <a href="https://www.instagram.com/maxbarrero/" target="_blank"><i
+          class="bi bi-instagram header__nav__links__link--net"></i></a>
+      <a href="https://twitter.com/Maxbarrero1" target="_blank"><i
+          class="bi bi-twitter header__nav__links__link--net"></i></a>
+      <a href="mailto:maxobarrero1@gmail.com"><i class="bi bi-envelope-fill header__nav__links__link--net"></i></a>
     </nav>
-  </div>
+  </header>
 
   <!--Sección superior-->
-  <section class="background mainSection__grid">
-    <div class="mainSection__welcome">
-      <h1>Welcome!</h1>
-      <div class="mainSection__text"> Thank you for visitting my website!
-        As a professional graphic illustrator, you can count on me for all your graphic design and visual media
-        services.
-        <br>
-        I invite you to see part of my work!
-        Contact me to see what I can do for you today.
-      </div>
-      <div class="mainSection__CheckWork">
-        <a href="#Carrusel">Check my work!</a>
+  <section class="mainSection">
+    <div class="background mainSection__grid">
+      <div class="mainSection__welcome">
+        <h1 class="mainSection__welcome__text">Welcome!</h1>
+        <div class="mainSection__text"> Thank you for visitting my website!
+          As a professional graphic illustrator, you can count on me for all your graphic design and visual media
+          services.
+          <br>
+          <br>
+          I invite you to see part of my work!
+          Contact me to see what I can do for you today.
+        </div>
+        <div class="mainSection__CheckWork">
+          <a class="mainSection__CheckWork__text" href="#Carrusel">Check my work!</a>
+        </div>
       </div>
     </div>
   </section>
@@ -113,13 +110,14 @@
   <!--Sección Pie de pagina-->
   <footer class="footer">
     <div class='footer__redes'>
-      <a href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/maxbarrero/" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://twitter.com/Maxbarrero1" target="_blank"><i class="bi bi-twitter"></i></a>
-      <a href="mailto:maxobarrero1@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+      <a class="footer__redes__red" href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i
+          class="bi bi-facebook"></i></a>
+      <a class="footer__redes__red" href="https://www.instagram.com/maxbarrero/" target="_blank"><i
+          class="bi bi-instagram"></i></a>
+      <a class="footer__redes__red" href="https://twitter.com/Maxbarrero1" target="_blank"><i
+          class="bi bi-twitter"></i></a>
+      <a class="footer__redes__red" href="mailto:maxobarrero1@gmail.com"><i class="bi bi-envelope-fill"></i></a>
     </div>
-    <br>
-    <br>
     <div class="footer__text">
       <p>
         <em>Buenos Aires, Argentina - 2021</em>
