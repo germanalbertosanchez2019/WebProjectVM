@@ -2,14 +2,17 @@
   display: flex;
   background-color: $ColorSecundario;
   justify-content: space-between;
+  color: $ColorFondo;
    &__image {
     height: auto;
     width: 25rem;
     padding-left: 4rem;
     background-color: $ColorSecundario;
+    color: $ColorFondo;
    }
    &__nav__links {
     background-color: $ColorSecundario;
+    color: $ColorFondo;
     line-height: 2rem;
     font-size: 1rem;
     padding-right: 4rem;

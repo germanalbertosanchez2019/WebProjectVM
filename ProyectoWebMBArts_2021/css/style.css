@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  background-color: #e3fcff; }
+  text-decoration: none; }
 
 body {
   background-color: #e3fcff; }
@@ -11,14 +10,17 @@ body {
 .header {
   display: flex;
   background-color: #09515a;
-  justify-content: space-between; }
+  justify-content: space-between;
+  color: #e3fcff; }
   .header__image {
     height: auto;
     width: 25rem;
     padding-left: 4rem;
-    background-color: #09515a; }
+    background-color: #09515a;
+    color: #e3fcff; }
   .header__nav__links {
     background-color: #09515a;
+    color: #e3fcff;
     line-height: 2rem;
     font-size: 1rem;
     padding-right: 4rem;
@@ -46,7 +48,8 @@ body {
   align-items: center;
   color: #09515a;
   margin-bottom: 1rem;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  background-color: #e3fcff; }
   .footer__redes {
     display: flex;
     gap: 2rem;
@@ -60,69 +63,68 @@ body {
     font-size: 1rem; }
 
 /*Seccion Bienvenidos*/
-.mainSection__grid {
-  display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-rows: 3;
-  justify-content: center;
-  align-items: flex-end;
-  grid-template-areas: "bienvenidos bienvenidos bienvenidos" "bienvenidos__texto bienvenidos__texto bienvenidos__texto" "checkMyWork checkMyWork checkMyWork"; }
-
-.mainSection__welcome {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  grid-area: bienvenidos;
-  padding: 1rem;
-  margin: 3rem;
-  width: 130rem;
-  border-radius: 15px;
-  background-color: #000000;
-  opacity: 0.7; }
-  .mainSection__welcome__text {
-    color: white;
-    background-color: #000000;
-    text-align: center;
-    font-family: 'PT Serif';
-    font-style: oblique;
-    font-size: 3.5rem;
-    opacity: 0.7; }
-
-.mainSection__text {
-  grid-area: bienvenidosTexto;
-  font-family: 'PT Serif';
-  color: #e3fcff;
-  padding: 0.5rem 2rem 0.5rem;
-  line-height: 3rem;
-  font-size: 1.3rem;
-  text-align: center;
-  letter-spacing: 0.1rem;
-  background-color: #000000;
-  opacity: 0.7;
-  text-decoration: none; }
-
-.mainSection__CheckWork {
-  grid-area: checkMyWork;
-  justify-self: center;
-  align-self: center;
-  background-color: #000000;
-  opacity: 0.7; }
-  .mainSection__CheckWork a {
-    transition: all 0.5s; }
-  .mainSection__CheckWork a:hover {
-    text-decoration: underline;
-    font-size: 1.9rem;
-    font-weight: bold;
-    color: white;
-    opacity: 1; }
-  .mainSection__CheckWork__text {
-    font-size: 1.8rem;
-    color: #e3fcff;
-    font-family: "PT serif";
+.mainSection {
+  background-color: #e3fcff; }
+  .mainSection__grid {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 3;
+    justify-content: center;
+    align-items: flex-end;
+    grid-template-areas: "bienvenidos bienvenidos bienvenidos" "bienvenidos__texto bienvenidos__texto bienvenidos__texto" "checkMyWork checkMyWork checkMyWork"; }
+  .mainSection__welcome {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    grid-area: bienvenidos;
+    padding: 1rem;
+    margin: 3rem;
+    width: 130rem;
+    border-radius: 15px;
+    background-color: #000000;
+    opacity: 0.7; }
+    .mainSection__welcome__text {
+      color: white;
+      background-color: #000000;
+      text-align: center;
+      font-family: 'PT Serif';
+      font-style: oblique;
+      font-size: 3.5rem;
+      opacity: 0.7; }
+  .mainSection__text {
+    grid-area: bienvenidosTexto;
+    font-family: 'PT Serif';
+    color: #e3fcff;
+    padding: 0.5rem 2rem 0.5rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
     background-color: #000000;
     opacity: 0.7;
-    color: #e3fcff; }
+    text-decoration: none; }
+  .mainSection__CheckWork {
+    grid-area: checkMyWork;
+    justify-self: center;
+    align-self: center;
+    background-color: #000000;
+    opacity: 0.7; }
+    .mainSection__CheckWork a {
+      transition: all 0.5s; }
+    .mainSection__CheckWork a:hover {
+      text-decoration: underline;
+      font-size: 1.9rem;
+      font-weight: bold;
+      color: white;
+      opacity: 1; }
+    .mainSection__CheckWork__text {
+      font-size: 1.8rem;
+      color: #e3fcff;
+      font-family: "PT serif";
+      text-decoration: none;
+      background-color: #000000;
+      opacity: 0.7;
+      color: #e3fcff; }
 
 .background {
   background-image: url(../Images/Portada_SinOpacidad.png);
@@ -135,9 +137,9 @@ body {
 
 /*Seccion Carrusel*/
 #carrusel {
-  background-image: linear-gradient(to right, #049fb5, #e3fcff); }
+  background-color: #e3fcff; }
 
-.carrusel__title {
+.carrusel .carrusel__title {
   display: flex;
   font-family: 'Permanent Marker';
   background-color: #09515a;
@@ -151,62 +153,60 @@ body {
   letter-spacing: 2px;
   text-decoration: underline; }
 
-.carrusel__grid {
+.carrusel .carrusel__grid {
   display: grid;
-  grid-template-columns: repeat(2, 600px);
-  grid-template-rows: repeat(3, 700px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
   grid-template-areas: "carrusel_Img1 carrusel_Img2"  "carrusel_Img3 carrusel_Img4" "carrusel_Img5 carrusel_Img6"; }
 
-.carrusel__container {
+.carrusel .carrusel__container {
   justify-content: center;
   align-content: center;
   padding: 40px;
   gap: 20px; }
 
-.carrusel {
-  width: 400px;
-  height: 500px;
+.carrusel .carrusel {
   border: 1px solid black; }
 
-.carrusel:hover {
+.carrusel .carrusel:hover {
   transform: scale(1.04); }
 
-.carrusel__Imagen1 {
+.carrusel .carrusel__Imagen1 {
   grid-area: carrusel_Img1;
   background: url("../Images/Messi.png");
   background-size: cover;
-  height: 100%;
-  width: 100%; }
+  object-fit: fill; }
 
-.carrusel__Imagen2 {
+.carrusel .carrusel__Imagen2 {
   grid-area: carrusel_Img2;
   background: url("../Images/Girl.png");
   background-size: cover;
   height: 100%;
   width: 100%; }
 
-.carrusel__Imagen3 {
+.carrusel .carrusel__Imagen3 {
   grid-area: carrusel_Img3;
   background: url("../Images/XMen.png");
   background-size: cover;
   height: 100%;
   width: 100%; }
 
-.carrusel__Imagen4 {
+.carrusel .carrusel__Imagen4 {
   grid-area: carrusel_Img4;
   background: url("../Images/Shiryu.png");
   background-size: cover;
   height: 100%;
   width: 100%; }
 
-.carrusel__Imagen5 {
+.carrusel .carrusel__Imagen5 {
   grid-area: carrusel_Img5;
   background: url("../Images/PowerpuffGirls.png");
   background-size: cover;
   height: 100%;
   width: 100%; }
 
-.carrusel__Imagen6 {
+.carrusel .carrusel__Imagen6 {
   grid-area: carrusel_Img6;
   background: url("../Images/KibaWolfRain.png");
   background-size: cover;
@@ -215,18 +215,18 @@ body {
 
 .main {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #e3fcff; }
   .main__image {
-    margin-top: 5rem;
-    padding-left: 30px; }
+    margin-top: 5rem; }
   .main__text {
-    text-align: center;
-    margin: 2.5rem; }
+    text-align: center; }
   .main__title {
     font-family: "Permanent Marker";
+    text-align: center;
     letter-spacing: 0.3rem;
     font-size: 40px;
-    margin: 4rem;
+    margin-top: 2rem;
     color: #09515a; }
   .main__subtitle {
     font-size: 21px;
@@ -235,146 +235,149 @@ body {
     line-height: 2rem;
     letter-spacing: 0.1rem;
     color: #09515a;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    margin-top: 2rem; }
   .main__detail {
     margin-top: 2rem;
     font-size: 1, 80px;
     line-height: 2rem;
     letter-spacing: 0.1rem; }
 
-.portfolio {
-  width: 400px;
-  height: 500px;
-  border: 1px solid black; }
-  .portfolio:hover {
-    transform: scale(1.04); }
-  .portfolio__title {
-    display: flex;
-    font-family: "Permanent Marker";
-    letter-spacing: 0.3rem;
-    font-size: 40px;
-    padding: 3rem;
-    color: #09515a;
-    justify-content: center;
-    align-content: center; }
-  .portfolio__container {
-    justify-content: center;
-    align-content: center;
-    gap: 20px; }
-  .portfolio__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 600px);
-    grid-template-rows: repeat(6, 400px);
-    grid-template-areas: "portfolio_Img6 portfolio_Img7"  "portfolio_Img6 portfolio_Img8" "portfolio_Img9 portfolio_Img3" "portfolio_Img5 portfolio_Img3" "portfolio_Img2 portfolio_Img1" "portfolio_Img2 portfolio_Img4";
-    align-content: center;
-    justify-content: center;
-    justify-items: center; }
-    .portfolio__grid__imagen1 {
-      grid-area: portfolio_Img1;
-      background: url("../Images/Asuka.png");
-      background-size: cover;
-      height: auto;
-      max-width: 100%; }
-    .portfolio__grid__imagen2 {
-      grid-area: portfolio_Img2;
-      background: url("../Images/Dororo.png");
-      background-size: cover;
-      height: 100%;
-      width: 100%; }
-    .portfolio__grid__imagen3 {
-      grid-area: portfolio_Img3;
-      background: url("../Images/XMen.png");
-      background-size: cover;
-      height: 100%;
-      width: 100%; }
-    .portfolio__grid__imagen4 {
-      grid-area: portfolio_Img4;
-      background: url("../Images/Shiryu.png");
-      background-size: cover;
-      height: auto;
-      max-width: 100%; }
-    .portfolio__grid__imagen5 {
-      grid-area: portfolio_Img5;
-      background: url("../Images/PowerpuffGirls.png");
-      background-size: cover;
-      height: auto;
-      max-width: 100%; }
-    .portfolio__grid__imagen6 {
-      grid-area: portfolio_Img6;
-      background: url("../Images/IceDemon.png");
-      background-size: cover;
-      height: 100%;
-      width: 100%; }
-    .portfolio__grid__imagen7 {
-      grid-area: portfolio_Img7;
-      background: url("../Images/BabyGroot.png");
-      background-size: cover;
-      height: auto;
-      max-width: 100%; }
-    .portfolio__grid__imagen8 {
-      grid-area: portfolio_Img8;
-      background: url("../Images/SailorMoon.png");
-      background-size: cover;
-      height: auto;
-      max-width: 100%; }
-    .portfolio__grid__imagen9 {
-      grid-area: portfolio_Img9;
-      background: url("../Images/Deadpool.png");
-      background-size: cover;
-      height: auto;
-      max-width: 100%; }
+body {
+  background-color: #e3fcff; }
 
-.commissions__mainTitle {
+.portfolio:hover {
+  transform: scale(1.04); }
+
+.portfolio__title {
+  display: flex;
   font-family: "Permanent Marker";
   letter-spacing: 0.3rem;
   font-size: 40px;
   padding: 3rem;
   color: #09515a;
-  display: flex; }
+  justify-content: center;
+  align-content: center; }
 
-.commissions__subtitle__main {
-  font-size: 22px;
-  font-family: 'Bad Script';
-  font-weight: bold;
-  line-height: 2rem;
-  letter-spacing: 0.05rem;
-  color: #09515a;
-  padding-bottom: 1rem; }
-
-.commissions__title {
-  font-family: 'Bad Script';
-  font-weight: bold;
-  line-height: 3rem;
-  letter-spacing: 0.05rem;
-  align-self: center;
+.portfolio__container {
+  justify-content: center;
   align-content: center;
-  align-items: center; }
+  gap: 20px; }
 
-.commissions__img {
-  filter: saturate(80%); }
-  .commissions__img:hover {
-    transform: scale(1.04);
-    filter: saturate(100%); }
-
-.commissions__text {
-  font-family: 'Bad Script';
-  line-height: 3rem;
-  letter-spacing: 0.05rem;
-  align-self: center;
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(6, 400px);
+  grid-template-areas: "portfolio_Img6 portfolio_Img7"  "portfolio_Img6 portfolio_Img8" "portfolio_Img9 portfolio_Img3" "portfolio_Img5 portfolio_Img3" "portfolio_Img2 portfolio_Img1" "portfolio_Img2 portfolio_Img4";
   align-content: center;
-  align-items: center; }
+  justify-content: center;
+  justify-items: center; }
+  .portfolio__grid__imagen1 {
+    grid-area: portfolio_Img1; }
+  .portfolio__grid__imagen2 {
+    grid-area: portfolio_Img2;
+    /*         background: url("../Images/Dororo.png");
+        background-size: cover;
+        height: 100%;
+        width: 100%; */ }
+  .portfolio__grid__imagen3 {
+    grid-area: portfolio_Img3;
+    /*         background: url("../Images/XMen.png");
+        background-size: cover;
+        height: 100%;
+        width: 100%; */ }
+  .portfolio__grid__imagen4 {
+    grid-area: portfolio_Img4;
+    /* background: url("../Images/Shiryu.png");
+        background-size: cover;
+        height: auto;
+        max-width: 100%; */ }
+  .portfolio__grid__imagen5 {
+    grid-area: portfolio_Img5;
+    /*         background: url("../Images/PowerpuffGirls.png");
+        background-size: cover;
+        height: auto;
+        max-width: 100%; */ }
+  .portfolio__grid__imagen6 {
+    grid-area: portfolio_Img6;
+    /* background: url("../Images/IceDemon.png");
+        background-size: cover;
+        height: 100%;
+        width: 100%; */ }
+  .portfolio__grid__imagen7 {
+    grid-area: portfolio_Img7;
+    /* background: url("../Images/BabyGroot.png");
+        background-size: cover;
+        height: auto;
+        max-width: 100%; */ }
+  .portfolio__grid__imagen8 {
+    grid-area: portfolio_Img8;
+    /*background:  url("../Images/SailorMoon.png");   // url("/Images/SailorMoon.png");
+        background-size: cover;
+        height: auto;
+        max-width: 100%;*/ }
+  .portfolio__grid__imagen9 {
+    grid-area: portfolio_Img9;
+    /*     background: url("../Images/Deadpool.png");
+        background-size: cover;
+        height: auto;
+        max-width: 100%;*/ }
 
-.commissions__rules {
-  font-size: 17.5px;
-  font-family: 'Bad Script';
-  line-height: 1.5rem;
-  letter-spacing: 0.05rem;
-  color: #09515a; }
+body {
+  background-color: #e3fcff; }
+
+.commissions {
+  background-color: #e3fcff; }
+  .commissions__mainTitle {
+    font-family: "Permanent Marker";
+    letter-spacing: 0.3rem;
+    font-size: 40px;
+    padding: 3rem;
+    color: #09515a;
+    display: flex; }
+  .commissions__subtitle__main {
+    font-size: 22px;
+    font-family: 'Bad Script';
+    font-weight: bold;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    color: #09515a;
+    padding-bottom: 1rem; }
+  .commissions__title {
+    font-family: 'Bad Script';
+    font-weight: bold;
+    line-height: 3rem;
+    letter-spacing: 0.05rem;
+    align-self: center;
+    align-content: center;
+    align-items: center; }
+  .commissions__img {
+    filter: saturate(80%); }
+    .commissions__img:hover {
+      transform: scale(1.04);
+      filter: saturate(100%); }
+  .commissions__text {
+    font-family: 'Bad Script';
+    line-height: 3rem;
+    letter-spacing: 0.05rem;
+    align-self: center;
+    align-content: center;
+    align-items: center; }
+  .commissions__rules {
+    font-size: 17.5px;
+    font-family: 'Bad Script';
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: #09515a; }
+
+body {
+  background-color: #e3fcff; }
 
 .contact {
   display: flex;
   flex-direction: row;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  background-color: #e3fcff; }
   .contact__text {
     flex-direction: column;
     align-content: center;

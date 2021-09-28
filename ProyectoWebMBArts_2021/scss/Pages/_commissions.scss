@@ -1,4 +1,9 @@
+body {
+  background-color: $ColorFondo;
+}
+
 .commissions {
+  background-color: $ColorFondo;
   &__mainTitle {
   font-family: "Permanent Marker";
     letter-spacing: 0.3rem;
