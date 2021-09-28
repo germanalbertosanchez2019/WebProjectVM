@@ -78,57 +78,40 @@
       </div>
     </div>
   </header>
-  <main>
-    <div class="contact">
-      <div class="contact__text">
-        <p class="contact__text__mainTitle">Contact Me!</p>
-        <p class="contact__text__detail">Hi there! <br> Do you have some new amazing project that requires some awesome
-          art?
-          <br>
-          Just want to say hi? Let's chat! Fill in the form below to reach me!
-        </p>
-      </div>
-      <div class="contact__form">
-        <form action="">
-          <fieldset class="contactMe">
-            <legend></legend>
-            <div class="contactMe">
-              <!--Nombre Completo-->
-              <div>
-                <label for="Nombre">Name</label>
-                <br>
-                <input class="contactMe contactMe--fieldBorders" type="text" id="Nombre" value="" required>
-              </div>
-              <!--Correo electronico-->
-              <div>
-                <label for="email">E-Mail</label>
-                <br>
-                <input class="contactMe contactMe--fieldBorders" type="email" id="E-mail" name="E-mail" required>
-                <br>
-                <div>
-                  <!--Espacio para consulta-->
-                  <div>
-                    <label for="Consulta">Message</label>
-                    <br>
-                    <input class="contactMe contactMe--boxBorders" type="text" name="Consulta" required>
-                    <br>
-                  </div>
-                  <br>
-                  <!--Botones-->
-                  <div class="contactMe">
-                    <button class="contactMe__buttons" type="submit" value="Submit">Submit</button>
-                    <button class="contactMe__buttons" type="reset" value="Reset">Clear</button>
-                  </div>
-                </div>
-          </fieldset>
-        </form>
-      </div>
+
+  <main class="justify-content-center align-content-center row contactMe__form">
+    <div class="contact__text">
+      <p class="contact__text__mainTitle">Contact Me!</p>
+      <p class="contact__text__detail">Hi there! Do you have some new amazing project that requires some awesome
+        art?
+        <br>
+        Just want to say hi? Let's chat! Fill in the form below to reach me!
+      </p>
     </div>
+    <form class="col-sm-12 col-md-4 p-5">
+      <div class="form-group p-2">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="Name">
+      </div>
+      <div class="form-group p-2">
+        <label for="Email">E-mail</label>
+        <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+      </div>
+      <div class="form-group p-2">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <!--Botones-->
+      <div class="contactMe">
+        <button class="contactMe__buttons" type="submit" value="Submit">Submit</button>
+        <button class="contactMe__buttons" type="reset" value="Reset">Clear</button>
+      </div>
+    </form>
   </main>
 
   <!--Sección Pie de pagina-->
-  <footer class="footer">
-    <div class='footer__redes'>
+  <footer class="footer col-sm-12 col-md-12 text-center justify-content-center">
+    <div class='footer__redes col-sm-12 col-md-12 text-center justify-content-center'>
       <a class="footer__redes__red" href="https://www.facebook.com/maximiliano.barrero.9" target="_blank"><i
           class="bi bi-facebook"></i></a>
       <a class="footer__redes__red" href="https://www.instagram.com/maxbarrero/" target="_blank"><i
@@ -137,12 +120,13 @@
           class="bi bi-twitter"></i></a>
       <a class="footer__redes__red" href="mailto:maxobarrero1@gmail.com"><i class="bi bi-envelope-fill"></i></a>
     </div>
-    <div class="footer__text">
+    <div class="footer__text col-sm-12 col-md-12 min-vw-100 max-vw-100">
       <p>
         <em>Buenos Aires, Argentina - 2021</em>
       </p>
     </div>
   </footer>
+
 </body>
 
 </html>

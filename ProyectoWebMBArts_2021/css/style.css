@@ -403,9 +403,15 @@ body {
 .contact {
   display: flex;
   flex-direction: row;
-  padding-top: 5rem;
-  background-color: #e3fcff; }
+  background-color: #e3fcff;
+  /*
+    &__form {
+    border: 0.2rem solid $ColorTitulo;
+    width: 45rem;
+    margin-left: 3rem;
+    }*/ }
   .contact__text {
+    background-color: #e3fcff;
     flex-direction: column;
     align-content: center;
     justify-self: center;
@@ -419,15 +425,11 @@ body {
       color: #09515a; }
     .contact__text__detail {
       font-family: "PT serif";
-      font-size: 1.5rem;
-      letter-spacing: 0.13rem;
-      padding-left: 4rem;
-      line-height: 6rem;
+      font-size: 0,3rem;
+      letter-spacing: 0.10rem;
+      padding-left: 2rem;
+      line-height: 2rem;
       color: #09515a; }
-  .contact__form {
-    border: 0.2rem solid #108291;
-    width: 45rem;
-    margin-left: 3rem; }
 
 .contactMe {
   font-family: "Permanent Marker";
@@ -451,6 +453,8 @@ body {
     border: none;
     color: whitesmoke;
     font-family: 'Permanent Marker';
-    font-size: 1.5rem;
-    width: 8rem;
-    height: 2.5rem; }
+    font-size: 1rem;
+    width: 5rem;
+    height: 2rem; }
+  .contactMe__form {
+    background-color: #e3fcff; }

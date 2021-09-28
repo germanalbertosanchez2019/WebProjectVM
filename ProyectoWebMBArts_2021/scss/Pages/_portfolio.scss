@@ -1,7 +1,9 @@
 #portfolio {
   background-color: $ColorFondo;
 }
-
+.PermanentMarker {
+  color: $ColorFondo;
+}
 .portfolio {
   background-color: $ColorFondo;
      &__hover:hover {
