@@ -1,12 +1,14 @@
-body {
+#portfolio {
   background-color: $ColorFondo;
 }
 
 .portfolio {
-     &:hover {
+  background-color: $ColorFondo;
+     &__hover:hover {
       transform: scale(1.04);
       }
     &__title {
+      background-color: $ColorFondo;
     display: flex;
     font-family: "Permanent Marker";
     letter-spacing: 0.3rem;
@@ -17,12 +19,14 @@ body {
     align-content: center;
     }
   &__container {
+    background-color: $ColorFondo;
       justify-content: center;
       align-content: center;
       gap: 20px;
       
     }
-  &__grid {
+  /*&__grid {
+    background-color: $ColorFondo;
     display: grid;
     grid-template-columns: repeat(2,600px);
     grid-template-rows: repeat(6,400px);
@@ -43,68 +47,68 @@ body {
       
       &__imagen2{
         grid-area: portfolio_Img2;
-/*         background: url("../Images/Dororo.png");
+         background: url("../Images/Dororo.png");
         background-size: cover;
         height: 100%;
-        width: 100%; */
+        width: 100%; 
       }
       
       &__imagen3{
         grid-area: portfolio_Img3;
-/*         background: url("../Images/XMen.png");
+         background: url("../Images/XMen.png");
         background-size: cover;
         height: 100%;
-        width: 100%; */
+        width: 100%; 
       }
       
       &__imagen4{
         grid-area: portfolio_Img4;
-        /* background: url("../Images/Shiryu.png");
+         background: url("../Images/Shiryu.png");
         background-size: cover;
         height: auto;
-        max-width: 100%; */
+        max-width: 100%; 
       }
       
       &__imagen5{
         grid-area: portfolio_Img5;
-/*         background: url("../Images/PowerpuffGirls.png");
+         background: url("../Images/PowerpuffGirls.png");
         background-size: cover;
         height: auto;
-        max-width: 100%; */
+        max-width: 100%; 
       }
       
       &__imagen6{
         grid-area: portfolio_Img6;
-        /* background: url("../Images/IceDemon.png");
+         background: url("../Images/IceDemon.png");
         background-size: cover;
         height: 100%;
-        width: 100%; */
+        width: 100%; 
       }
       
       &__imagen7{
         grid-area: portfolio_Img7;
-        /* background: url("../Images/BabyGroot.png");
+         background: url("../Images/BabyGroot.png");
         background-size: cover;
         height: auto;
-        max-width: 100%; */
+        max-width: 100%; 
       }
       
       &__imagen8{
         grid-area: portfolio_Img8;
-        /*background:  url("../Images/SailorMoon.png");   // url("/Images/SailorMoon.png");
+        background:  url("../Images/SailorMoon.png");   // url("/Images/SailorMoon.png");
         background-size: cover;
         height: auto;
-        max-width: 100%;*/
+        max-width: 100%;
       }
       
       &__imagen9{
         grid-area: portfolio_Img9;
-   /*     background: url("../Images/Deadpool.png");
+        background: url("../Images/Deadpool.png");
         background-size: cover;
         height: auto;
-        max-width: 100%;*/
+        max-width: 100%;
       }        
-  }
+  }*/
 }  
   
    

@@ -243,85 +243,112 @@ body {
     line-height: 2rem;
     letter-spacing: 0.1rem; }
 
-body {
+#portfolio {
   background-color: #e3fcff; }
 
-.portfolio:hover {
-  transform: scale(1.04); }
-
-.portfolio__title {
-  display: flex;
-  font-family: "Permanent Marker";
-  letter-spacing: 0.3rem;
-  font-size: 40px;
-  padding: 3rem;
-  color: #09515a;
-  justify-content: center;
-  align-content: center; }
-
-.portfolio__container {
-  justify-content: center;
-  align-content: center;
-  gap: 20px; }
-
-.portfolio__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 600px);
-  grid-template-rows: repeat(6, 400px);
-  grid-template-areas: "portfolio_Img6 portfolio_Img7"  "portfolio_Img6 portfolio_Img8" "portfolio_Img9 portfolio_Img3" "portfolio_Img5 portfolio_Img3" "portfolio_Img2 portfolio_Img1" "portfolio_Img2 portfolio_Img4";
-  align-content: center;
-  justify-content: center;
-  justify-items: center; }
-  .portfolio__grid__imagen1 {
-    grid-area: portfolio_Img1; }
-  .portfolio__grid__imagen2 {
-    grid-area: portfolio_Img2;
-    /*         background: url("../Images/Dororo.png");
+.portfolio {
+  background-color: #e3fcff;
+  /*&__grid {
+    background-color: $ColorFondo;
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: repeat(6,400px);
+    grid-template-areas:
+    "portfolio_Img6 portfolio_Img7" 
+    "portfolio_Img6 portfolio_Img8"
+    "portfolio_Img9 portfolio_Img3"
+    "portfolio_Img5 portfolio_Img3"
+    "portfolio_Img2 portfolio_Img1"
+    "portfolio_Img2 portfolio_Img4";
+    align-content: center;
+    justify-content: center;
+    justify-items: center;  
+  
+      &__imagen1{
+        grid-area: portfolio_Img1;       
+      }
+      
+      &__imagen2{
+        grid-area: portfolio_Img2;
+         background: url("../Images/Dororo.png");
         background-size: cover;
         height: 100%;
-        width: 100%; */ }
-  .portfolio__grid__imagen3 {
-    grid-area: portfolio_Img3;
-    /*         background: url("../Images/XMen.png");
+        width: 100%; 
+      }
+      
+      &__imagen3{
+        grid-area: portfolio_Img3;
+         background: url("../Images/XMen.png");
         background-size: cover;
         height: 100%;
-        width: 100%; */ }
-  .portfolio__grid__imagen4 {
-    grid-area: portfolio_Img4;
-    /* background: url("../Images/Shiryu.png");
+        width: 100%; 
+      }
+      
+      &__imagen4{
+        grid-area: portfolio_Img4;
+         background: url("../Images/Shiryu.png");
         background-size: cover;
         height: auto;
-        max-width: 100%; */ }
-  .portfolio__grid__imagen5 {
-    grid-area: portfolio_Img5;
-    /*         background: url("../Images/PowerpuffGirls.png");
+        max-width: 100%; 
+      }
+      
+      &__imagen5{
+        grid-area: portfolio_Img5;
+         background: url("../Images/PowerpuffGirls.png");
         background-size: cover;
         height: auto;
-        max-width: 100%; */ }
-  .portfolio__grid__imagen6 {
-    grid-area: portfolio_Img6;
-    /* background: url("../Images/IceDemon.png");
+        max-width: 100%; 
+      }
+      
+      &__imagen6{
+        grid-area: portfolio_Img6;
+         background: url("../Images/IceDemon.png");
         background-size: cover;
         height: 100%;
-        width: 100%; */ }
-  .portfolio__grid__imagen7 {
-    grid-area: portfolio_Img7;
-    /* background: url("../Images/BabyGroot.png");
+        width: 100%; 
+      }
+      
+      &__imagen7{
+        grid-area: portfolio_Img7;
+         background: url("../Images/BabyGroot.png");
         background-size: cover;
         height: auto;
-        max-width: 100%; */ }
-  .portfolio__grid__imagen8 {
-    grid-area: portfolio_Img8;
-    /*background:  url("../Images/SailorMoon.png");   // url("/Images/SailorMoon.png");
+        max-width: 100%; 
+      }
+      
+      &__imagen8{
+        grid-area: portfolio_Img8;
+        background:  url("../Images/SailorMoon.png");   // url("/Images/SailorMoon.png");
         background-size: cover;
         height: auto;
-        max-width: 100%;*/ }
-  .portfolio__grid__imagen9 {
-    grid-area: portfolio_Img9;
-    /*     background: url("../Images/Deadpool.png");
+        max-width: 100%;
+      }
+      
+      &__imagen9{
+        grid-area: portfolio_Img9;
+        background: url("../Images/Deadpool.png");
         background-size: cover;
         height: auto;
-        max-width: 100%;*/ }
+        max-width: 100%;
+      }        
+  }*/ }
+  .portfolio__hover:hover {
+    transform: scale(1.04); }
+  .portfolio__title {
+    background-color: #e3fcff;
+    display: flex;
+    font-family: "Permanent Marker";
+    letter-spacing: 0.3rem;
+    font-size: 40px;
+    padding: 3rem;
+    color: #09515a;
+    justify-content: center;
+    align-content: center; }
+  .portfolio__container {
+    background-color: #e3fcff;
+    justify-content: center;
+    align-content: center;
+    gap: 20px; }
 
 body {
   background-color: #e3fcff; }
