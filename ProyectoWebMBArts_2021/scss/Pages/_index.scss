@@ -1,4 +1,8 @@
 /*Seccion Bienvenidos*/
+body {
+  background-color: $ColorFondo;
+}
+
 .mainSection{
   background-color: $ColorFondo;
   &__grid {
@@ -74,9 +78,7 @@
       font-family: "PT serif";
       text-decoration: none;
       background-color: #000000;
-      opacity: $Opacity;
-      color: $ColorFondo;
-      
+      opacity: $Opacity;      
     }
   }
 }
@@ -97,22 +99,25 @@
 }
 
 .carrusel {
-  .carrusel__title {
+  background-color: $ColorFondo;
+  &__hover:hover {
+    transform: scale(1.04);
+    }
+  &__title {
     display: flex;
     font-family: 'Permanent Marker';
-    background-color: $ColorSecundario;
-    color: $ColorFondo;
+    color: $ColorSecundario;
       padding: 4rem;
       align-self: center;
       justify-self:center;
       justify-content: center;
-      font-size: 40px;
-      line-height: 10px;
-      letter-spacing: 2px;
+      font-size: 6rem;
+      line-height: 3rem;
+      letter-spacing: 0,1rem;
     text-decoration: underline ;
     }
   
-    .carrusel__grid {
+ /*   .carrusel__grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
@@ -185,9 +190,7 @@
     height: 100%;
     width: 100%;
   }
-
-
-    
+*/  
 }
 
 

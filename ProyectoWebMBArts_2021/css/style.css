@@ -47,7 +47,7 @@ body {
   align-content: center;
   align-items: center;
   color: #09515a;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   padding-top: 3rem;
   background-color: #e3fcff; }
   .footer__redes {
@@ -63,6 +63,9 @@ body {
     font-size: 1rem; }
 
 /*Seccion Bienvenidos*/
+body {
+  background-color: #e3fcff; }
+
 .mainSection {
   background-color: #e3fcff; }
   .mainSection__grid {
@@ -123,8 +126,7 @@ body {
       font-family: "PT serif";
       text-decoration: none;
       background-color: #000000;
-      opacity: 0.7;
-      color: #e3fcff; }
+      opacity: 0.7; }
 
 .background {
   background-image: url(../Images/Portada_SinOpacidad.png);
@@ -139,79 +141,96 @@ body {
 #carrusel {
   background-color: #e3fcff; }
 
-.carrusel .carrusel__title {
-  display: flex;
-  font-family: 'Permanent Marker';
-  background-color: #09515a;
-  color: #e3fcff;
-  padding: 4rem;
-  align-self: center;
-  justify-self: center;
-  justify-content: center;
-  font-size: 40px;
-  line-height: 10px;
-  letter-spacing: 2px;
-  text-decoration: underline; }
+.carrusel {
+  background-color: #e3fcff;
+  /*   .carrusel__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-auto-rows: minmax(100px,auto);
+      grid-template-areas:
+      "carrusel_Img1 carrusel_Img2" 
+      "carrusel_Img3 carrusel_Img4"
+      "carrusel_Img5 carrusel_Img6";
+    }
+  
+    .carrusel__container {
+      justify-content: center;
+      align-content: center;
+      padding: 40px;
+      gap: 20px;
+    }
+    
+  .carrusel {
+    //width: 400px;
+    //height: 500px;
+    border: 1px solid black;
+  }
+  .carrusel:hover {
+    transform: scale(1.04);
+  }
+  .carrusel__Imagen1{
+    grid-area: carrusel_Img1;
+    background: url("../Images/Messi.png");
+    background-size: cover;
+    //height: 100%;
+    //width: 100%;
+    object-fit:fill;
+  }
 
-.carrusel .carrusel__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-areas: "carrusel_Img1 carrusel_Img2"  "carrusel_Img3 carrusel_Img4" "carrusel_Img5 carrusel_Img6"; }
+  .carrusel__Imagen2{
+    grid-area: carrusel_Img2;
+    background: url("../Images/Girl.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
 
-.carrusel .carrusel__container {
-  justify-content: center;
-  align-content: center;
-  padding: 40px;
-  gap: 20px; }
+  .carrusel__Imagen3{
+    grid-area: carrusel_Img3;
+    background: url("../Images/XMen.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
 
-.carrusel .carrusel {
-  border: 1px solid black; }
+  .carrusel__Imagen4{
+    grid-area: carrusel_Img4;
+    background: url("../Images/Shiryu.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
 
-.carrusel .carrusel:hover {
-  transform: scale(1.04); }
-
-.carrusel .carrusel__Imagen1 {
-  grid-area: carrusel_Img1;
-  background: url("../Images/Messi.png");
-  background-size: cover;
-  object-fit: fill; }
-
-.carrusel .carrusel__Imagen2 {
-  grid-area: carrusel_Img2;
-  background: url("../Images/Girl.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
-
-.carrusel .carrusel__Imagen3 {
-  grid-area: carrusel_Img3;
-  background: url("../Images/XMen.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
-
-.carrusel .carrusel__Imagen4 {
-  grid-area: carrusel_Img4;
-  background: url("../Images/Shiryu.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
-
-.carrusel .carrusel__Imagen5 {
-  grid-area: carrusel_Img5;
-  background: url("../Images/PowerpuffGirls.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
-
-.carrusel .carrusel__Imagen6 {
-  grid-area: carrusel_Img6;
-  background: url("../Images/KibaWolfRain.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
+  .carrusel__Imagen5{
+    grid-area: carrusel_Img5;
+    background: url("../Images/PowerpuffGirls.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .carrusel__Imagen6{
+    grid-area: carrusel_Img6;
+    background: url("../Images/KibaWolfRain.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+*/ }
+  .carrusel__hover:hover {
+    transform: scale(1.04); }
+  .carrusel__title {
+    display: flex;
+    font-family: 'Permanent Marker';
+    color: #09515a;
+    padding: 4rem;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    font-size: 6rem;
+    line-height: 3rem;
+    letter-spacing: 0,1rem;
+    text-decoration: underline; }
 
 .main {
   display: flex;
@@ -245,6 +264,13 @@ body {
 
 #portfolio {
   background-color: #e3fcff; }
+
+.PermanentMarker {
+  color: #e3fcff;
+  font-family: "Permanent Marker";
+  background-color: #09515a;
+  font-size: 200px;
+  padding-left: 10px; }
 
 .portfolio {
   background-color: #e3fcff;
